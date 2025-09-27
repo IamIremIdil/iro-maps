@@ -170,6 +170,9 @@ def draw_graph(selected_start=None, selected_end=None, path=[], distance=0, use_
     instr_text = SMALL_FONT.render("Click on nodes to set start and end points", True, PANEL_TEXT)
     screen.blit(instr_text, (WIDTH - 300, 25))
 
+    iro_text = SMALL_FONT.render("Made by Irem Idil", True, PANEL_TEXT)
+    screen.blit(iro_text, (WIDTH - 95, 5))
+
     # Draw edges
     for node, neighbors in graph.items():
         start_pos = node_positions[node]
